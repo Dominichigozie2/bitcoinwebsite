@@ -8,7 +8,7 @@
   box-sizing: border-box;
   user-select: none;
   font-family: 'DM Sans', sans-serif;
-  behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -16,6 +16,13 @@ body {
   font-family: 'DM Sans', sans-serif;
   behavior: smooth;
 }
+
+
+.container{
+  width: 90%;
+  margin-inline: auto;
+}
+
 
 :root {
   --bgd-pink: #DB2F69;
@@ -165,6 +172,7 @@ nav {
 .sticking {
   transition: all 500ms ease-in-out;
   background: var(--bgd-pink-lit);
+  box-shadow: 1px 7px 10px rgba(50, 50, 50, 0.1);
   z-index: 100;
   position: sticky;
   top: 0;
@@ -1219,11 +1227,26 @@ footer {
     -moz-transition: background-color 0.3s;
     -ms-transition: background-color 0.3s;
     -o-transition: background-color 0.3s;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+}
+
+.container{
+  width: 90%;
+  margin-inline: auto;
+}
+
+/* ===========media screen=========== */
+
+@media(width > 1400px) {
+  .container{
+    width: 1400px;
   }
 }
 
-
-/* ===========media screen=========== */
 @media(width < 950px) {
   .nav-container {
     width: 90%;

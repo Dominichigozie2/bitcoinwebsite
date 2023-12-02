@@ -104,3 +104,25 @@ dropdowns.forEach(function (dropdown) {
   });
 });
 
+
+// accordion
+
+var acc = document.getElementsByClassName("accordion-button");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    
+    this.classList.toggle("active");
+
+    var accordion_body = this.nextElementSibling;
+    if (accordion_body.style.display === "block") {
+      accordion_body.style.display = "none";
+    } else {
+      accordion_body.style.display = "block";
+    }
+
+    var icon = this.querySelector(".fa");
+    icon.classList.toggle("rotate");
+  });
+}
