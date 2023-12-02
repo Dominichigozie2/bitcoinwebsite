@@ -577,9 +577,9 @@ nav {
             text-align: left;
             background-color: transparent;
             border: none;
-            border-radius: 8px;
             transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
             cursor: pointer;
+            border-radius: 8px;
             -webkit-border-radius: 8px;
             -moz-border-radius: 8px;
             -ms-border-radius: 8px;
@@ -595,7 +595,6 @@ nav {
 
         .accordion_body {
             padding: 1rem 1.25rem;
-
             font-size: 16px;
             display: none;
             overflow: hidden;
@@ -613,7 +612,7 @@ nav {
             -moz-transform: rotate(180deg);
             -ms-transform: rotate(180deg);
             -o-transform: rotate(180deg);
-}
+        }
     }
 
 }
